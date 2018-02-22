@@ -49,10 +49,10 @@ def main(flag, k):
     prec += precision(groundtruth, preds)
     total += 1
 
-  print(flag, 'P@%d: %.4f%%\tDiv: %.4f' % (k, prec*100/total, jacc))
+  print(flag, 'P@%d: %.4f%%\tDiv: %.4f' % (k, prec*100/total, -jacc))
 
 if __name__ == '__main__':
   main('clo', k=5)
   main('clo', k=10)
-  main('ele', k=5)
-  main('ele', k=10)
+  # main('ele', k=5)
+  # main('ele', k=10)

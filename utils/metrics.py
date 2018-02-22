@@ -43,7 +43,7 @@ def print_all_metrics(flag, res, k=10):
     prec += precision(groundtruth, preds)
     jacc += jaccard(preds)
   print('%s\tP@%d: %.4f%%\tDiv: %.4f'
-      % (flag, k, prec*100/total, jacc/total))
+      % (flag, k, prec*100/total, -jacc/total))
 
 
 if __name__ == '__main__':

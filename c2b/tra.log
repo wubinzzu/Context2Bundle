@@ -1,0 +1,933 @@
+2018-01-31 17:49:22.627081: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: Tesla M40 major: 5 minor: 2 memoryClockRate(GHz): 1.112
+pciBusID: 0000:06:00.0
+totalMemory: 11.17GiB freeMemory: 10.90GiB
+2018-01-31 17:49:22.627151: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla M40, pci bus id: 0000:06:00.0, compute capability: 5.2)
+<tf.Variable 'H1:0' shape=(23035, 32) dtype=float32_ref>
+<tf.Variable 'C1:0' shape=(485, 32) dtype=float32_ref>
+<tf.Variable 'B1:0' shape=(23035,) dtype=float32_ref>
+<tf.Variable 'uhist-cnn/kernel-1:0' shape=(1, 64, 1, 12) dtype=float32_ref>
+<tf.Variable 'uhist-cnn/bias-1:0' shape=(12,) dtype=float32_ref>
+<tf.Variable 'uhist-cnn/kernel-2:0' shape=(2, 64, 1, 12) dtype=float32_ref>
+<tf.Variable 'uhist-cnn/bias-2:0' shape=(12,) dtype=float32_ref>
+<tf.Variable 'uhist-cnn/kernel-4:0' shape=(4, 64, 1, 12) dtype=float32_ref>
+<tf.Variable 'uhist-cnn/bias-4:0' shape=(12,) dtype=float32_ref>
+<tf.Variable 'uhist-cnn/kernel-8:0' shape=(8, 64, 1, 12) dtype=float32_ref>
+<tf.Variable 'uhist-cnn/bias-8:0' shape=(12,) dtype=float32_ref>
+<tf.Variable 'uhist-cnn/kernel-12:0' shape=(12, 64, 1, 12) dtype=float32_ref>
+<tf.Variable 'uhist-cnn/bias-12:0' shape=(12,) dtype=float32_ref>
+<tf.Variable 'uhist-cnn/kernel-16:0' shape=(16, 64, 1, 12) dtype=float32_ref>
+<tf.Variable 'uhist-cnn/bias-16:0' shape=(12,) dtype=float32_ref>
+<tf.Variable 'uhist-cnn/kernel-32:0' shape=(32, 64, 1, 12) dtype=float32_ref>
+<tf.Variable 'uhist-cnn/bias-32:0' shape=(12,) dtype=float32_ref>
+<tf.Variable 'uhist-cnn/kernel-64:0' shape=(64, 64, 1, 12) dtype=float32_ref>
+<tf.Variable 'uhist-cnn/bias-64:0' shape=(12,) dtype=float32_ref>
+<tf.Variable 'dense/kernel:0' shape=(96, 64) dtype=float32_ref>
+<tf.Variable 'dense/bias:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'seq-rnn/decoder/multi_rnn_cell/cell_0/lstm_cell/kernel:0' shape=(128, 256) dtype=float32_ref>
+<tf.Variable 'seq-rnn/decoder/multi_rnn_cell/cell_0/lstm_cell/bias:0' shape=(256,) dtype=float32_ref>
+<tf.Variable 'seq-rnn/decoder/multi_rnn_cell/cell_1/lstm_cell/kernel:0' shape=(128, 256) dtype=float32_ref>
+<tf.Variable 'seq-rnn/decoder/multi_rnn_cell/cell_1/lstm_cell/bias:0' shape=(256,) dtype=float32_ref>
+<tf.Variable 'seq-rnn/decoder/output_projection/kernel:0' shape=(32, 23035) dtype=float32_ref>
+<tf.Variable 'seq-rnn/decoder/output_projection/cates:0' shape=(32, 485) dtype=float32_ref>
+<tf.Variable 'seq-rnn/decoder/output_projection/bias:0' shape=(23035,) dtype=float32_ref>
+Epoch:0 AUC:0.4975
+Epoch:0 Iter:100 Cost:5.8660
+Epoch:0 Iter:200 Cost:6.0470
+Epoch:0 Iter:300 Cost:5.9581
+Epoch:0 Iter:400 Cost:5.7717
+Epoch:0 Iter:500 Cost:5.7656
+Epoch:0 Iter:600 Cost:6.0129
+Epoch:0 Iter:700 Cost:5.5576
+Epoch:0 Iter:800 Cost:5.6946
+Epoch:0 Iter:900 Cost:5.4672
+Epoch:0 Iter:1000 Cost:5.7293
+Epoch:0 Iter:1100 Cost:5.3028
+Epoch:0 Iter:1200 Cost:5.2103
+Epoch:0 Iter:1300 Cost:5.8013
+Epoch:0 Iter:1400 Cost:5.6306
+Epoch:0 Iter:1500 Cost:5.4177
+Epoch:0 Iter:1600 Cost:5.7121
+Epoch:1 AUC:0.6673
+model saved at clo/model-1602
+Epoch:1 Iter:100 Cost:5.7099
+Epoch:1 Iter:200 Cost:5.7521
+Epoch:1 Iter:300 Cost:5.6131
+Epoch:1 Iter:400 Cost:5.6195
+Epoch:1 Iter:500 Cost:5.6013
+Epoch:1 Iter:600 Cost:5.8137
+Epoch:1 Iter:700 Cost:5.4726
+Epoch:1 Iter:800 Cost:5.5910
+Epoch:1 Iter:900 Cost:5.6573
+Epoch:1 Iter:1000 Cost:5.4916
+Epoch:1 Iter:1100 Cost:6.0628
+Epoch:1 Iter:1200 Cost:5.7690
+Epoch:1 Iter:1300 Cost:5.8469
+Epoch:1 Iter:1400 Cost:5.3542
+Epoch:1 Iter:1500 Cost:5.4759
+Epoch:1 Iter:1600 Cost:5.6481
+Epoch:2 AUC:0.6667
+model saved at clo/model-3204
+Epoch:2 Iter:100 Cost:5.4731
+Epoch:2 Iter:200 Cost:5.5724
+Epoch:2 Iter:300 Cost:5.4305
+Epoch:2 Iter:400 Cost:5.5098
+Epoch:2 Iter:500 Cost:5.7122
+Epoch:2 Iter:600 Cost:5.4658
+Epoch:2 Iter:700 Cost:5.4882
+Epoch:2 Iter:800 Cost:5.5894
+Epoch:2 Iter:900 Cost:5.6278
+Epoch:2 Iter:1000 Cost:5.5899
+Epoch:2 Iter:1100 Cost:5.6124
+Epoch:2 Iter:1200 Cost:5.6391
+Epoch:2 Iter:1300 Cost:5.2360
+Epoch:2 Iter:1400 Cost:5.5201
+Epoch:2 Iter:1500 Cost:5.6595
+Epoch:2 Iter:1600 Cost:5.6350
+Epoch:3 AUC:0.6690
+model saved at clo/model-4806
+Epoch:3 Iter:100 Cost:5.4466
+Epoch:3 Iter:200 Cost:5.4890
+Epoch:3 Iter:300 Cost:5.4771
+Epoch:3 Iter:400 Cost:5.3944
+Epoch:3 Iter:500 Cost:5.6534
+Epoch:3 Iter:600 Cost:5.3977
+Epoch:3 Iter:700 Cost:5.6557
+Epoch:3 Iter:800 Cost:5.4015
+Epoch:3 Iter:900 Cost:5.6978
+Epoch:3 Iter:1000 Cost:5.5131
+Epoch:3 Iter:1100 Cost:5.5260
+Epoch:3 Iter:1200 Cost:5.6586
+Epoch:3 Iter:1300 Cost:5.6355
+Epoch:3 Iter:1400 Cost:5.5389
+Epoch:3 Iter:1500 Cost:5.5450
+Epoch:3 Iter:1600 Cost:5.9094
+Epoch:4 AUC:0.6762
+model saved at clo/model-6408
+Epoch:4 Iter:100 Cost:5.3990
+Epoch:4 Iter:200 Cost:5.6851
+Epoch:4 Iter:300 Cost:5.5153
+Epoch:4 Iter:400 Cost:5.4510
+Epoch:4 Iter:500 Cost:6.0270
+Epoch:4 Iter:600 Cost:5.5293
+Epoch:4 Iter:700 Cost:5.4262
+Epoch:4 Iter:800 Cost:5.6352
+Epoch:4 Iter:900 Cost:5.4484
+Epoch:4 Iter:1000 Cost:5.2771
+Epoch:4 Iter:1100 Cost:5.4253
+Epoch:4 Iter:1200 Cost:5.6237
+Epoch:4 Iter:1300 Cost:5.7244
+Epoch:4 Iter:1400 Cost:5.4455
+Epoch:4 Iter:1500 Cost:5.6687
+Epoch:4 Iter:1600 Cost:5.5620
+Epoch:5 AUC:0.6888
+model saved at clo/model-8010
+Epoch:5 Iter:100 Cost:5.3524
+Epoch:5 Iter:200 Cost:5.5327
+Epoch:5 Iter:300 Cost:5.3548
+Epoch:5 Iter:400 Cost:5.3340
+Epoch:5 Iter:500 Cost:5.6342
+Epoch:5 Iter:600 Cost:5.4654
+Epoch:5 Iter:700 Cost:5.4984
+Epoch:5 Iter:800 Cost:5.4594
+Epoch:5 Iter:900 Cost:5.3960
+Epoch:5 Iter:1000 Cost:5.2753
+Epoch:5 Iter:1100 Cost:5.3184
+Epoch:5 Iter:1200 Cost:5.3781
+Epoch:5 Iter:1300 Cost:5.7269
+Epoch:5 Iter:1400 Cost:5.4428
+Epoch:5 Iter:1500 Cost:5.2119
+Epoch:5 Iter:1600 Cost:5.4651
+Epoch:6 AUC:0.6885
+model saved at clo/model-9612
+Epoch:6 Iter:100 Cost:5.5271
+Epoch:6 Iter:200 Cost:5.3196
+Epoch:6 Iter:300 Cost:5.1541
+Epoch:6 Iter:400 Cost:5.5552
+Epoch:6 Iter:500 Cost:5.3298
+Epoch:6 Iter:600 Cost:5.6546
+Epoch:6 Iter:700 Cost:5.4997
+Epoch:6 Iter:800 Cost:5.6528
+Epoch:6 Iter:900 Cost:5.4187
+Epoch:6 Iter:1000 Cost:5.5492
+Epoch:6 Iter:1100 Cost:5.5366
+Epoch:6 Iter:1200 Cost:5.3209
+Epoch:6 Iter:1300 Cost:5.2948
+Epoch:6 Iter:1400 Cost:5.6493
+Epoch:6 Iter:1500 Cost:5.3862
+Epoch:6 Iter:1600 Cost:5.3657
+Epoch:7 AUC:0.6910
+model saved at clo/model-11214
+Epoch:7 Iter:100 Cost:5.2210
+Epoch:7 Iter:200 Cost:5.2916
+Epoch:7 Iter:300 Cost:5.4346
+Epoch:7 Iter:400 Cost:5.5213
+Epoch:7 Iter:500 Cost:5.5406
+Epoch:7 Iter:600 Cost:5.3519
+Epoch:7 Iter:700 Cost:5.2377
+Epoch:7 Iter:800 Cost:5.3974
+Epoch:7 Iter:900 Cost:5.4922
+Epoch:7 Iter:1000 Cost:5.4026
+Epoch:7 Iter:1100 Cost:5.7429
+Epoch:7 Iter:1200 Cost:5.2589
+Epoch:7 Iter:1300 Cost:5.4686
+Epoch:7 Iter:1400 Cost:5.4800
+Epoch:7 Iter:1500 Cost:5.5573
+Epoch:7 Iter:1600 Cost:5.4544
+Epoch:8 AUC:0.6917
+model saved at clo/model-12816
+Epoch:8 Iter:100 Cost:5.6066
+Epoch:8 Iter:200 Cost:5.5708
+Epoch:8 Iter:300 Cost:5.3048
+Epoch:8 Iter:400 Cost:5.2244
+Epoch:8 Iter:500 Cost:5.5032
+Epoch:8 Iter:600 Cost:5.3188
+Epoch:8 Iter:700 Cost:5.5021
+Epoch:8 Iter:800 Cost:5.4166
+Epoch:8 Iter:900 Cost:5.7353
+Epoch:8 Iter:1000 Cost:5.3962
+Epoch:8 Iter:1100 Cost:5.3012
+Epoch:8 Iter:1200 Cost:5.3272
+Epoch:8 Iter:1300 Cost:5.7360
+Epoch:8 Iter:1400 Cost:5.4873
+Epoch:8 Iter:1500 Cost:5.2526
+Epoch:8 Iter:1600 Cost:5.3944
+Epoch:9 AUC:0.6924
+model saved at clo/model-14418
+Epoch:9 Iter:100 Cost:5.1793
+Epoch:9 Iter:200 Cost:5.2357
+Epoch:9 Iter:300 Cost:5.2070
+Epoch:9 Iter:400 Cost:5.3765
+Epoch:9 Iter:500 Cost:5.3735
+Epoch:9 Iter:600 Cost:5.4496
+Epoch:9 Iter:700 Cost:5.4417
+Epoch:9 Iter:800 Cost:5.2561
+Epoch:9 Iter:900 Cost:5.3740
+Epoch:9 Iter:1000 Cost:5.5822
+Epoch:9 Iter:1100 Cost:5.2441
+Epoch:9 Iter:1200 Cost:5.0937
+Epoch:9 Iter:1300 Cost:5.4317
+Epoch:9 Iter:1400 Cost:5.4146
+Epoch:9 Iter:1500 Cost:5.1154
+Epoch:9 Iter:1600 Cost:5.4337
+Epoch:10 AUC:0.6972
+model saved at clo/model-16020
+Epoch:10 Iter:100 Cost:5.4225
+Epoch:10 Iter:200 Cost:5.4116
+Epoch:10 Iter:300 Cost:5.3368
+Epoch:10 Iter:400 Cost:5.4009
+Epoch:10 Iter:500 Cost:5.5119
+Epoch:10 Iter:600 Cost:5.2983
+Epoch:10 Iter:700 Cost:5.3239
+Epoch:10 Iter:800 Cost:5.3117
+Epoch:10 Iter:900 Cost:5.3003
+Epoch:10 Iter:1000 Cost:5.1302
+Epoch:10 Iter:1100 Cost:5.3275
+Epoch:10 Iter:1200 Cost:5.1870
+Epoch:10 Iter:1300 Cost:5.2626
+Epoch:10 Iter:1400 Cost:5.3984
+Epoch:10 Iter:1500 Cost:5.5116
+Epoch:10 Iter:1600 Cost:5.4172
+Epoch:11 AUC:0.6738
+model saved at clo/model-17622
+Epoch:11 Iter:100 Cost:5.2625
+Epoch:11 Iter:200 Cost:5.4538
+Epoch:11 Iter:300 Cost:5.3765
+Epoch:11 Iter:400 Cost:5.3612
+Epoch:11 Iter:500 Cost:5.2825
+Epoch:11 Iter:600 Cost:5.1050
+Epoch:11 Iter:700 Cost:5.3382
+Epoch:11 Iter:800 Cost:5.3962
+Epoch:11 Iter:900 Cost:5.3728
+Epoch:11 Iter:1000 Cost:5.4087
+Epoch:11 Iter:1100 Cost:5.3141
+Epoch:11 Iter:1200 Cost:5.3261
+Epoch:11 Iter:1300 Cost:5.2213
+Epoch:11 Iter:1400 Cost:5.3277
+Epoch:11 Iter:1500 Cost:5.3146
+Epoch:11 Iter:1600 Cost:5.3616
+Epoch:12 AUC:0.6999
+model saved at clo/model-19224
+Epoch:12 Iter:100 Cost:5.3017
+Epoch:12 Iter:200 Cost:5.4761
+Epoch:12 Iter:300 Cost:5.1168
+Epoch:12 Iter:400 Cost:4.8677
+Epoch:12 Iter:500 Cost:5.2188
+Epoch:12 Iter:600 Cost:5.2798
+Epoch:12 Iter:700 Cost:5.1158
+Epoch:12 Iter:800 Cost:5.2669
+Epoch:12 Iter:900 Cost:5.4449
+Epoch:12 Iter:1000 Cost:5.2859
+Epoch:12 Iter:1100 Cost:5.1714
+Epoch:12 Iter:1200 Cost:5.6349
+Epoch:12 Iter:1300 Cost:5.1591
+Epoch:12 Iter:1400 Cost:5.0832
+Epoch:12 Iter:1500 Cost:5.0653
+Epoch:12 Iter:1600 Cost:5.4841
+Epoch:13 AUC:0.6995
+model saved at clo/model-20826
+Epoch:13 Iter:100 Cost:5.2688
+Epoch:13 Iter:200 Cost:5.3341
+Epoch:13 Iter:300 Cost:5.3808
+Epoch:13 Iter:400 Cost:5.1450
+Epoch:13 Iter:500 Cost:5.1840
+Epoch:13 Iter:600 Cost:5.3235
+Epoch:13 Iter:700 Cost:5.4063
+Epoch:13 Iter:800 Cost:5.4881
+Epoch:13 Iter:900 Cost:4.9933
+Epoch:13 Iter:1000 Cost:5.4553
+Epoch:13 Iter:1100 Cost:5.1503
+Epoch:13 Iter:1200 Cost:5.2690
+Epoch:13 Iter:1300 Cost:4.9394
+Epoch:13 Iter:1400 Cost:5.4038
+Epoch:13 Iter:1500 Cost:5.2428
+Epoch:13 Iter:1600 Cost:5.3772
+Epoch:14 AUC:0.6937
+model saved at clo/model-22428
+Epoch:14 Iter:100 Cost:5.0930
+Epoch:14 Iter:200 Cost:5.5279
+Epoch:14 Iter:300 Cost:5.1062
+Epoch:14 Iter:400 Cost:5.1987
+Epoch:14 Iter:500 Cost:5.3746
+Epoch:14 Iter:600 Cost:5.0640
+Epoch:14 Iter:700 Cost:5.3705
+Epoch:14 Iter:800 Cost:5.4625
+Epoch:14 Iter:900 Cost:5.0823
+Epoch:14 Iter:1000 Cost:5.2828
+Epoch:14 Iter:1100 Cost:5.2230
+Epoch:14 Iter:1200 Cost:5.4769
+Epoch:14 Iter:1300 Cost:5.3405
+Epoch:14 Iter:1400 Cost:5.1159
+Epoch:14 Iter:1500 Cost:5.3285
+Epoch:14 Iter:1600 Cost:5.3166
+Epoch:15 AUC:0.6909
+model saved at clo/model-24030
+Epoch:15 Iter:100 Cost:5.1448
+Epoch:15 Iter:200 Cost:5.4496
+Epoch:15 Iter:300 Cost:5.2043
+Epoch:15 Iter:400 Cost:5.3054
+Epoch:15 Iter:500 Cost:5.2415
+Epoch:15 Iter:600 Cost:5.1203
+Epoch:15 Iter:700 Cost:5.4474
+Epoch:15 Iter:800 Cost:4.9797
+Epoch:15 Iter:900 Cost:5.2946
+Epoch:15 Iter:1000 Cost:5.0703
+Epoch:15 Iter:1100 Cost:5.0131
+Epoch:15 Iter:1200 Cost:5.0081
+Epoch:15 Iter:1300 Cost:5.3192
+Epoch:15 Iter:1400 Cost:5.0638
+Epoch:15 Iter:1500 Cost:5.0923
+Epoch:15 Iter:1600 Cost:5.2060
+Epoch:16 AUC:0.6958
+model saved at clo/model-25632
+Epoch:16 Iter:100 Cost:5.1774
+Epoch:16 Iter:200 Cost:5.2492
+Epoch:16 Iter:300 Cost:5.0723
+Epoch:16 Iter:400 Cost:5.0107
+Epoch:16 Iter:500 Cost:4.9307
+Epoch:16 Iter:600 Cost:5.1620
+Epoch:16 Iter:700 Cost:5.0146
+Epoch:16 Iter:800 Cost:5.3736
+Epoch:16 Iter:900 Cost:5.2372
+Epoch:16 Iter:1000 Cost:4.9972
+Epoch:16 Iter:1100 Cost:4.8199
+Epoch:16 Iter:1200 Cost:5.2384
+Epoch:16 Iter:1300 Cost:5.2158
+Epoch:16 Iter:1400 Cost:4.9625
+Epoch:16 Iter:1500 Cost:5.1421
+Epoch:16 Iter:1600 Cost:5.1563
+Epoch:17 AUC:0.6968
+model saved at clo/model-27234
+Epoch:17 Iter:100 Cost:4.9886
+Epoch:17 Iter:200 Cost:5.3069
+Epoch:17 Iter:300 Cost:5.2075
+Epoch:17 Iter:400 Cost:4.9964
+Epoch:17 Iter:500 Cost:4.9520
+Epoch:17 Iter:600 Cost:5.0598
+Epoch:17 Iter:700 Cost:5.3458
+Epoch:17 Iter:800 Cost:5.5931
+Epoch:17 Iter:900 Cost:5.2785
+Epoch:17 Iter:1000 Cost:5.2740
+Epoch:17 Iter:1100 Cost:5.0560
+Epoch:17 Iter:1200 Cost:5.3685
+Epoch:17 Iter:1300 Cost:5.1149
+Epoch:17 Iter:1400 Cost:5.2974
+Epoch:17 Iter:1500 Cost:5.3841
+Epoch:17 Iter:1600 Cost:5.2389
+Epoch:18 AUC:0.6951
+model saved at clo/model-28836
+Epoch:18 Iter:100 Cost:4.9755
+Epoch:18 Iter:200 Cost:5.2188
+Epoch:18 Iter:300 Cost:5.1342
+Epoch:18 Iter:400 Cost:5.0653
+Epoch:18 Iter:500 Cost:5.2467
+Epoch:18 Iter:600 Cost:4.9414
+Epoch:18 Iter:700 Cost:5.0614
+Epoch:18 Iter:800 Cost:5.1056
+Epoch:18 Iter:900 Cost:4.9904
+Epoch:18 Iter:1000 Cost:5.1983
+Epoch:18 Iter:1100 Cost:4.8549
+Epoch:18 Iter:1200 Cost:4.9437
+Epoch:18 Iter:1300 Cost:5.4286
+Epoch:18 Iter:1400 Cost:5.1503
+Epoch:18 Iter:1500 Cost:4.9934
+Epoch:18 Iter:1600 Cost:5.1081
+Epoch:19 AUC:0.6949
+model saved at clo/model-30438
+Epoch:19 Iter:100 Cost:4.8658
+Epoch:19 Iter:200 Cost:5.0680
+Epoch:19 Iter:300 Cost:5.1535
+Epoch:19 Iter:400 Cost:4.9750
+Epoch:19 Iter:500 Cost:5.0320
+Epoch:19 Iter:600 Cost:5.0299
+Epoch:19 Iter:700 Cost:5.1705
+Epoch:19 Iter:800 Cost:5.2240
+Epoch:19 Iter:900 Cost:4.9299
+Epoch:19 Iter:1000 Cost:5.1312
+Epoch:19 Iter:1100 Cost:5.0906
+Epoch:19 Iter:1200 Cost:4.9081
+Epoch:19 Iter:1300 Cost:5.3337
+Epoch:19 Iter:1400 Cost:4.9483
+Epoch:19 Iter:1500 Cost:5.3641
+Epoch:19 Iter:1600 Cost:5.2180
+Epoch:20 AUC:0.6836
+model saved at clo/model-32040
+Epoch:20 Iter:100 Cost:5.0450
+Epoch:20 Iter:200 Cost:5.1455
+Epoch:20 Iter:300 Cost:5.1249
+Epoch:20 Iter:400 Cost:4.8600
+Epoch:20 Iter:500 Cost:5.0718
+Epoch:20 Iter:600 Cost:5.0755
+Epoch:20 Iter:700 Cost:5.1322
+Epoch:20 Iter:800 Cost:5.1954
+Epoch:20 Iter:900 Cost:5.1259
+Epoch:20 Iter:1000 Cost:5.1764
+Epoch:20 Iter:1100 Cost:4.9521
+Epoch:20 Iter:1200 Cost:4.9954
+Epoch:20 Iter:1300 Cost:5.1896
+Epoch:20 Iter:1400 Cost:4.8865
+Epoch:20 Iter:1500 Cost:5.3552
+Epoch:20 Iter:1600 Cost:5.0333
+Epoch:21 AUC:0.6877
+model saved at clo/model-33642
+Epoch:21 Iter:100 Cost:4.9513
+Epoch:21 Iter:200 Cost:4.9401
+Epoch:21 Iter:300 Cost:4.8191
+Epoch:21 Iter:400 Cost:5.1076
+Epoch:21 Iter:500 Cost:4.8897
+Epoch:21 Iter:600 Cost:5.0830
+Epoch:21 Iter:700 Cost:5.1205
+Epoch:21 Iter:800 Cost:4.9199
+Epoch:21 Iter:900 Cost:4.8385
+Epoch:21 Iter:1000 Cost:5.1368
+Epoch:21 Iter:1100 Cost:4.9849
+Epoch:21 Iter:1200 Cost:5.0276
+Epoch:21 Iter:1300 Cost:5.2265
+Epoch:21 Iter:1400 Cost:4.9995
+Epoch:21 Iter:1500 Cost:5.1635
+Epoch:21 Iter:1600 Cost:5.3957
+Epoch:22 AUC:0.6715
+model saved at clo/model-35244
+Epoch:22 Iter:100 Cost:5.0352
+Epoch:22 Iter:200 Cost:4.8849
+Epoch:22 Iter:300 Cost:4.9117
+Epoch:22 Iter:400 Cost:4.7633
+Epoch:22 Iter:500 Cost:5.0208
+Epoch:22 Iter:600 Cost:5.1123
+Epoch:22 Iter:700 Cost:5.3336
+Epoch:22 Iter:800 Cost:4.8984
+Epoch:22 Iter:900 Cost:4.8958
+Epoch:22 Iter:1000 Cost:4.9639
+Epoch:22 Iter:1100 Cost:5.0018
+Epoch:22 Iter:1200 Cost:4.9385
+Epoch:22 Iter:1300 Cost:5.2692
+Epoch:22 Iter:1400 Cost:5.0546
+Epoch:22 Iter:1500 Cost:5.0793
+Epoch:22 Iter:1600 Cost:5.2695
+Epoch:23 AUC:0.6757
+model saved at clo/model-36846
+Epoch:23 Iter:100 Cost:5.0769
+Epoch:23 Iter:200 Cost:4.8058
+Epoch:23 Iter:300 Cost:4.7908
+Epoch:23 Iter:400 Cost:5.3170
+Epoch:23 Iter:500 Cost:5.0203
+Epoch:23 Iter:600 Cost:4.8167
+Epoch:23 Iter:700 Cost:4.9444
+Epoch:23 Iter:800 Cost:4.9330
+Epoch:23 Iter:900 Cost:5.4309
+Epoch:23 Iter:1000 Cost:5.1698
+Epoch:23 Iter:1100 Cost:4.8538
+Epoch:23 Iter:1200 Cost:5.1617
+Epoch:23 Iter:1300 Cost:5.0074
+Epoch:23 Iter:1400 Cost:4.9641
+Epoch:23 Iter:1500 Cost:5.0594
+Epoch:23 Iter:1600 Cost:5.1775
+Epoch:24 AUC:0.6818
+model saved at clo/model-38448
+Epoch:24 Iter:100 Cost:4.9055
+Epoch:24 Iter:200 Cost:4.7803
+Epoch:24 Iter:300 Cost:4.7923
+Epoch:24 Iter:400 Cost:4.9269
+Epoch:24 Iter:500 Cost:5.1743
+Epoch:24 Iter:600 Cost:5.0747
+Epoch:24 Iter:700 Cost:4.9428
+Epoch:24 Iter:800 Cost:4.9211
+Epoch:24 Iter:900 Cost:5.0243
+Epoch:24 Iter:1000 Cost:4.9075
+Epoch:24 Iter:1100 Cost:5.0186
+Epoch:24 Iter:1200 Cost:4.8182
+Epoch:24 Iter:1300 Cost:5.2046
+Epoch:24 Iter:1400 Cost:5.0887
+Epoch:24 Iter:1500 Cost:4.8944
+Epoch:24 Iter:1600 Cost:5.1193
+Epoch:25 AUC:0.6730
+model saved at clo/model-40050
+Epoch:25 Iter:100 Cost:4.8591
+Epoch:25 Iter:200 Cost:5.1897
+Epoch:25 Iter:300 Cost:4.9058
+Epoch:25 Iter:400 Cost:5.0638
+Epoch:25 Iter:500 Cost:5.0069
+Epoch:25 Iter:600 Cost:4.7651
+Epoch:25 Iter:700 Cost:4.8092
+Epoch:25 Iter:800 Cost:4.9929
+Epoch:25 Iter:900 Cost:4.9844
+Epoch:25 Iter:1000 Cost:4.9268
+Epoch:25 Iter:1100 Cost:5.1951
+Epoch:25 Iter:1200 Cost:5.1265
+Epoch:25 Iter:1300 Cost:4.9121
+Epoch:25 Iter:1400 Cost:4.8340
+Epoch:25 Iter:1500 Cost:4.9844
+Epoch:25 Iter:1600 Cost:5.2131
+Epoch:26 AUC:0.6814
+model saved at clo/model-41652
+Epoch:26 Iter:100 Cost:4.9675
+Epoch:26 Iter:200 Cost:4.7824
+Epoch:26 Iter:300 Cost:4.8944
+Epoch:26 Iter:400 Cost:5.0202
+Epoch:26 Iter:500 Cost:4.8375
+Epoch:26 Iter:600 Cost:4.7316
+Epoch:26 Iter:700 Cost:4.8558
+Epoch:26 Iter:800 Cost:4.7732
+Epoch:26 Iter:900 Cost:4.8994
+Epoch:26 Iter:1000 Cost:4.6951
+Epoch:26 Iter:1100 Cost:4.8922
+Epoch:26 Iter:1200 Cost:5.0305
+Epoch:26 Iter:1300 Cost:4.8793
+Epoch:26 Iter:1400 Cost:4.8171
+Epoch:26 Iter:1500 Cost:4.8542
+Epoch:26 Iter:1600 Cost:4.9853
+Epoch:27 AUC:0.6752
+model saved at clo/model-43254
+Epoch:27 Iter:100 Cost:4.9591
+Epoch:27 Iter:200 Cost:4.6567
+Epoch:27 Iter:300 Cost:4.9023
+Epoch:27 Iter:400 Cost:4.9567
+Epoch:27 Iter:500 Cost:4.5276
+Epoch:27 Iter:600 Cost:4.6770
+Epoch:27 Iter:700 Cost:5.1660
+Epoch:27 Iter:800 Cost:4.8691
+Epoch:27 Iter:900 Cost:4.7959
+Epoch:27 Iter:1000 Cost:4.9654
+Epoch:27 Iter:1100 Cost:5.1246
+Epoch:27 Iter:1200 Cost:4.8635
+Epoch:27 Iter:1300 Cost:4.8938
+Epoch:27 Iter:1400 Cost:4.7500
+Epoch:27 Iter:1500 Cost:4.9980
+Epoch:27 Iter:1600 Cost:4.9501
+Epoch:28 AUC:0.6759
+model saved at clo/model-44856
+Epoch:28 Iter:100 Cost:4.9875
+Epoch:28 Iter:200 Cost:4.6343
+Epoch:28 Iter:300 Cost:4.8514
+Epoch:28 Iter:400 Cost:4.6659
+Epoch:28 Iter:500 Cost:4.8300
+Epoch:28 Iter:600 Cost:4.8126
+Epoch:28 Iter:700 Cost:4.8262
+Epoch:28 Iter:800 Cost:4.8279
+Epoch:28 Iter:900 Cost:5.0619
+Epoch:28 Iter:1000 Cost:4.8796
+Epoch:28 Iter:1100 Cost:4.8220
+Epoch:28 Iter:1200 Cost:5.0406
+Epoch:28 Iter:1300 Cost:5.0532
+Epoch:28 Iter:1400 Cost:4.6862
+Epoch:28 Iter:1500 Cost:4.8541
+Epoch:28 Iter:1600 Cost:4.8687
+Epoch:29 AUC:0.6703
+model saved at clo/model-46458
+Epoch:29 Iter:100 Cost:4.5232
+Epoch:29 Iter:200 Cost:4.9948
+Epoch:29 Iter:300 Cost:4.9570
+Epoch:29 Iter:400 Cost:4.8460
+Epoch:29 Iter:500 Cost:4.8425
+Epoch:29 Iter:600 Cost:4.7898
+Epoch:29 Iter:700 Cost:4.7210
+Epoch:29 Iter:800 Cost:4.6476
+Epoch:29 Iter:900 Cost:4.7335
+Epoch:29 Iter:1000 Cost:4.7428
+Epoch:29 Iter:1100 Cost:4.8196
+Epoch:29 Iter:1200 Cost:4.9281
+Epoch:29 Iter:1300 Cost:4.7575
+Epoch:29 Iter:1400 Cost:4.8092
+Epoch:29 Iter:1500 Cost:4.9351
+Epoch:29 Iter:1600 Cost:4.9009
+Epoch:30 AUC:0.6565
+model saved at clo/model-48060
+Epoch:30 Iter:100 Cost:4.7089
+Epoch:30 Iter:200 Cost:4.6998
+Epoch:30 Iter:300 Cost:4.7108
+Epoch:30 Iter:400 Cost:4.9022
+Epoch:30 Iter:500 Cost:4.7380
+Epoch:30 Iter:600 Cost:4.6349
+Epoch:30 Iter:700 Cost:4.7569
+Epoch:30 Iter:800 Cost:5.0377
+Epoch:30 Iter:900 Cost:4.6777
+Epoch:30 Iter:1000 Cost:4.7458
+Epoch:30 Iter:1100 Cost:4.6001
+Epoch:30 Iter:1200 Cost:5.0994
+Epoch:30 Iter:1300 Cost:5.0808
+Epoch:30 Iter:1400 Cost:5.1977
+Epoch:30 Iter:1500 Cost:4.7291
+Epoch:30 Iter:1600 Cost:4.7363
+Epoch:31 AUC:0.6588
+model saved at clo/model-49662
+Epoch:31 Iter:100 Cost:4.8393
+Epoch:31 Iter:200 Cost:4.7825
+Epoch:31 Iter:300 Cost:4.7099
+Epoch:31 Iter:400 Cost:5.3411
+Epoch:31 Iter:500 Cost:4.8838
+Epoch:31 Iter:600 Cost:4.9249
+Epoch:31 Iter:700 Cost:5.3577
+Epoch:31 Iter:800 Cost:4.5744
+Epoch:31 Iter:900 Cost:4.6416
+Epoch:31 Iter:1000 Cost:4.6808
+Epoch:31 Iter:1100 Cost:4.8513
+Epoch:31 Iter:1200 Cost:4.9344
+Epoch:31 Iter:1300 Cost:4.8176
+Epoch:31 Iter:1400 Cost:5.0474
+Epoch:31 Iter:1500 Cost:4.7769
+Epoch:31 Iter:1600 Cost:4.7735
+Epoch:32 AUC:0.6658
+model saved at clo/model-51264
+Epoch:32 Iter:100 Cost:4.8630
+Epoch:32 Iter:200 Cost:4.6252
+Epoch:32 Iter:300 Cost:4.8218
+Epoch:32 Iter:400 Cost:4.9326
+Epoch:32 Iter:500 Cost:4.7151
+Epoch:32 Iter:600 Cost:4.9086
+Epoch:32 Iter:700 Cost:4.9643
+Epoch:32 Iter:800 Cost:5.3781
+Epoch:32 Iter:900 Cost:4.7108
+Epoch:32 Iter:1000 Cost:4.7565
+Epoch:32 Iter:1100 Cost:5.0769
+Epoch:32 Iter:1200 Cost:4.9876
+Epoch:32 Iter:1300 Cost:4.6595
+Epoch:32 Iter:1400 Cost:4.8062
+Epoch:32 Iter:1500 Cost:5.3981
+Epoch:32 Iter:1600 Cost:4.9901
+Epoch:33 AUC:0.6520
+model saved at clo/model-52866
+Epoch:33 Iter:100 Cost:4.5392
+Epoch:33 Iter:200 Cost:5.0299
+Epoch:33 Iter:300 Cost:4.3614
+Epoch:33 Iter:400 Cost:4.6490
+Epoch:33 Iter:500 Cost:4.6892
+Epoch:33 Iter:600 Cost:4.2660
+Epoch:33 Iter:700 Cost:4.7243
+Epoch:33 Iter:800 Cost:4.5833
+Epoch:33 Iter:900 Cost:4.6593
+Epoch:33 Iter:1000 Cost:4.6630
+Epoch:33 Iter:1100 Cost:4.6454
+Epoch:33 Iter:1200 Cost:4.8113
+Epoch:33 Iter:1300 Cost:4.9495
+Epoch:33 Iter:1400 Cost:4.7359
+Epoch:33 Iter:1500 Cost:4.9284
+Epoch:33 Iter:1600 Cost:4.6830
+Epoch:34 AUC:0.6583
+model saved at clo/model-54468
+Epoch:34 Iter:100 Cost:4.3124
+Epoch:34 Iter:200 Cost:4.6880
+Epoch:34 Iter:300 Cost:4.6184
+Epoch:34 Iter:400 Cost:4.6989
+Epoch:34 Iter:500 Cost:4.9968
+Epoch:34 Iter:600 Cost:4.4739
+Epoch:34 Iter:700 Cost:4.5823
+Epoch:34 Iter:800 Cost:4.5563
+Epoch:34 Iter:900 Cost:5.0525
+Epoch:34 Iter:1000 Cost:4.8868
+Epoch:34 Iter:1100 Cost:4.6883
+Epoch:34 Iter:1200 Cost:5.0720
+Epoch:34 Iter:1300 Cost:4.7226
+Epoch:34 Iter:1400 Cost:4.4334
+Epoch:34 Iter:1500 Cost:4.8200
+Epoch:34 Iter:1600 Cost:4.7223
+Epoch:35 AUC:0.6525
+model saved at clo/model-56070
+Epoch:35 Iter:100 Cost:4.6708
+Epoch:35 Iter:200 Cost:4.6862
+Epoch:35 Iter:300 Cost:4.7318
+Epoch:35 Iter:400 Cost:4.8637
+Epoch:35 Iter:500 Cost:4.7439
+Epoch:35 Iter:600 Cost:4.7443
+Epoch:35 Iter:700 Cost:4.6988
+Epoch:35 Iter:800 Cost:5.0218
+Epoch:35 Iter:900 Cost:4.6761
+Epoch:35 Iter:1000 Cost:4.7383
+Epoch:35 Iter:1100 Cost:4.7404
+Epoch:35 Iter:1200 Cost:4.5957
+Epoch:35 Iter:1300 Cost:4.7642
+Epoch:35 Iter:1400 Cost:4.6635
+Epoch:35 Iter:1500 Cost:4.7867
+Epoch:35 Iter:1600 Cost:4.9580
+Epoch:36 AUC:0.6480
+model saved at clo/model-57672
+Epoch:36 Iter:100 Cost:4.9146
+Epoch:36 Iter:200 Cost:4.6887
+Epoch:36 Iter:300 Cost:4.7450
+Epoch:36 Iter:400 Cost:4.3894
+Epoch:36 Iter:500 Cost:4.8237
+Epoch:36 Iter:600 Cost:4.9145
+Epoch:36 Iter:700 Cost:4.4019
+Epoch:36 Iter:800 Cost:4.5407
+Epoch:36 Iter:900 Cost:4.5322
+Epoch:36 Iter:1000 Cost:4.9374
+Epoch:36 Iter:1100 Cost:4.8039
+Epoch:36 Iter:1200 Cost:4.5231
+Epoch:36 Iter:1300 Cost:4.5719
+Epoch:36 Iter:1400 Cost:4.9434
+Epoch:36 Iter:1500 Cost:4.7759
+Epoch:36 Iter:1600 Cost:4.4248
+Epoch:37 AUC:0.6421
+model saved at clo/model-59274
+Epoch:37 Iter:100 Cost:4.7421
+Epoch:37 Iter:200 Cost:4.5298
+Epoch:37 Iter:300 Cost:4.6156
+Epoch:37 Iter:400 Cost:4.5726
+Epoch:37 Iter:500 Cost:4.7959
+Epoch:37 Iter:600 Cost:4.5220
+Epoch:37 Iter:700 Cost:4.7118
+Epoch:37 Iter:800 Cost:4.9022
+Epoch:37 Iter:900 Cost:4.5410
+Epoch:37 Iter:1000 Cost:4.7780
+Epoch:37 Iter:1100 Cost:4.6233
+Epoch:37 Iter:1200 Cost:4.8259
+Epoch:37 Iter:1300 Cost:4.6440
+Epoch:37 Iter:1400 Cost:5.0828
+Epoch:37 Iter:1500 Cost:4.5721
+Epoch:37 Iter:1600 Cost:4.5641
+Epoch:38 AUC:0.6137
+model saved at clo/model-60876
+Epoch:38 Iter:100 Cost:4.5036
+Epoch:38 Iter:200 Cost:4.5020
+Epoch:38 Iter:300 Cost:4.9003
+Epoch:38 Iter:400 Cost:4.5079
+Epoch:38 Iter:500 Cost:4.7343
+Epoch:38 Iter:600 Cost:4.5144
+Epoch:38 Iter:700 Cost:5.0311
+Epoch:38 Iter:800 Cost:4.5767
+Epoch:38 Iter:900 Cost:4.4693
+Epoch:38 Iter:1000 Cost:4.6454
+Epoch:38 Iter:1100 Cost:4.6438
+Epoch:38 Iter:1200 Cost:4.6343
+Epoch:38 Iter:1300 Cost:4.8949
+Epoch:38 Iter:1400 Cost:4.9545
+Epoch:38 Iter:1500 Cost:4.8228
+Epoch:38 Iter:1600 Cost:4.5480
+Epoch:39 AUC:0.6384
+model saved at clo/model-62478
+Epoch:39 Iter:100 Cost:4.7016
+Epoch:39 Iter:200 Cost:4.4600
+Epoch:39 Iter:300 Cost:4.6736
+Epoch:39 Iter:400 Cost:4.6060
+Epoch:39 Iter:500 Cost:4.8075
+Epoch:39 Iter:600 Cost:4.7477
+Epoch:39 Iter:700 Cost:5.1591
+Epoch:39 Iter:800 Cost:4.6024
+Epoch:39 Iter:900 Cost:4.6353
+Epoch:39 Iter:1000 Cost:4.5599
+Epoch:39 Iter:1100 Cost:4.6682
+Epoch:39 Iter:1200 Cost:5.0401
+Epoch:39 Iter:1300 Cost:4.6753
+Epoch:39 Iter:1400 Cost:4.6826
+Epoch:39 Iter:1500 Cost:4.6968
+Epoch:39 Iter:1600 Cost:4.4591
+Epoch:40 AUC:0.6291
+model saved at clo/model-64080
+Epoch:40 Iter:100 Cost:4.6303
+Epoch:40 Iter:200 Cost:4.4375
+Epoch:40 Iter:300 Cost:4.4413
+Epoch:40 Iter:400 Cost:4.3923
+Epoch:40 Iter:500 Cost:4.6235
+Epoch:40 Iter:600 Cost:4.5654
+Epoch:40 Iter:700 Cost:4.6166
+Epoch:40 Iter:800 Cost:4.6575
+Epoch:40 Iter:900 Cost:4.7596
+Epoch:40 Iter:1000 Cost:4.4610
+Epoch:40 Iter:1100 Cost:4.5760
+Epoch:40 Iter:1200 Cost:4.6158
+Epoch:40 Iter:1300 Cost:4.5154
+Epoch:40 Iter:1400 Cost:5.1353
+Epoch:40 Iter:1500 Cost:4.6936
+Epoch:40 Iter:1600 Cost:4.5508
+Epoch:41 AUC:0.6363
+model saved at clo/model-65682
+Epoch:41 Iter:100 Cost:4.5155
+Epoch:41 Iter:200 Cost:4.5718
+Epoch:41 Iter:300 Cost:4.6557
+Epoch:41 Iter:400 Cost:4.7599
+Epoch:41 Iter:500 Cost:4.6078
+Epoch:41 Iter:600 Cost:4.6843
+Epoch:41 Iter:700 Cost:4.9125
+Epoch:41 Iter:800 Cost:4.3569
+Epoch:41 Iter:900 Cost:4.6361
+Epoch:41 Iter:1000 Cost:4.6246
+Epoch:41 Iter:1100 Cost:4.7350
+Epoch:41 Iter:1200 Cost:4.5525
+Epoch:41 Iter:1300 Cost:4.5837
+Epoch:41 Iter:1400 Cost:4.9229
+Epoch:41 Iter:1500 Cost:4.9717
+Epoch:41 Iter:1600 Cost:4.6190
+Epoch:42 AUC:0.6287
+model saved at clo/model-67284
+Epoch:42 Iter:100 Cost:4.7685
+Epoch:42 Iter:200 Cost:4.5461
+Epoch:42 Iter:300 Cost:4.7450
+Epoch:42 Iter:400 Cost:4.7445
+Epoch:42 Iter:500 Cost:4.7775
+Epoch:42 Iter:600 Cost:4.6643
+Epoch:42 Iter:700 Cost:4.3095
+Epoch:42 Iter:800 Cost:4.3386
+Epoch:42 Iter:900 Cost:4.6644
+Epoch:42 Iter:1000 Cost:4.5054
+Epoch:42 Iter:1100 Cost:4.4621
+Epoch:42 Iter:1200 Cost:4.6763
+Epoch:42 Iter:1300 Cost:4.7484
+Epoch:42 Iter:1400 Cost:4.6150
+Epoch:42 Iter:1500 Cost:4.8387
+Epoch:42 Iter:1600 Cost:4.5161
+Epoch:43 AUC:0.6287
+model saved at clo/model-68886
+Epoch:43 Iter:100 Cost:4.5730
+Epoch:43 Iter:200 Cost:4.5820
+Epoch:43 Iter:300 Cost:4.5225
+Epoch:43 Iter:400 Cost:4.6215
+Epoch:43 Iter:500 Cost:4.6304
+Epoch:43 Iter:600 Cost:4.5384
+Epoch:43 Iter:700 Cost:4.3782
+Epoch:43 Iter:800 Cost:4.7134
+Epoch:43 Iter:900 Cost:4.7228
+Epoch:43 Iter:1000 Cost:4.8225
+Epoch:43 Iter:1100 Cost:4.3172
+Epoch:43 Iter:1200 Cost:4.7086
+Epoch:43 Iter:1300 Cost:4.5105
+Epoch:43 Iter:1400 Cost:5.0932
+Epoch:43 Iter:1500 Cost:5.1024
+Epoch:43 Iter:1600 Cost:4.6876
+Epoch:44 AUC:0.6245
+model saved at clo/model-70488
+Epoch:44 Iter:100 Cost:4.5515
+Epoch:44 Iter:200 Cost:4.4455
+Epoch:44 Iter:300 Cost:4.4735
+Epoch:44 Iter:400 Cost:4.8211
+Epoch:44 Iter:500 Cost:4.2717
+Epoch:44 Iter:600 Cost:4.5894
+Epoch:44 Iter:700 Cost:4.9091
+Epoch:44 Iter:800 Cost:4.5672
+Epoch:44 Iter:900 Cost:4.6411
+Epoch:44 Iter:1000 Cost:4.7244
+Epoch:44 Iter:1100 Cost:4.5368
+Epoch:44 Iter:1200 Cost:4.7134
+Epoch:44 Iter:1300 Cost:4.7071
+Epoch:44 Iter:1400 Cost:4.4826
+Epoch:44 Iter:1500 Cost:5.1408
+Epoch:44 Iter:1600 Cost:4.7018
+Epoch:45 AUC:0.6219
+model saved at clo/model-72090
+Epoch:45 Iter:100 Cost:4.3863
+Epoch:45 Iter:200 Cost:4.5334
+Epoch:45 Iter:300 Cost:4.4244
+Epoch:45 Iter:400 Cost:4.7187
+Epoch:45 Iter:500 Cost:4.5431
+Epoch:45 Iter:600 Cost:4.2819
+Epoch:45 Iter:700 Cost:4.4321
+Epoch:45 Iter:800 Cost:4.4766
+Epoch:45 Iter:900 Cost:4.6903
+Epoch:45 Iter:1000 Cost:4.4831
+Epoch:45 Iter:1100 Cost:4.3674
+Epoch:45 Iter:1200 Cost:4.5155
+Epoch:45 Iter:1300 Cost:4.4179
+Epoch:45 Iter:1400 Cost:4.7102
+Epoch:45 Iter:1500 Cost:4.6119
+Epoch:45 Iter:1600 Cost:4.5997
+Epoch:46 AUC:0.6116
+model saved at clo/model-73692
+Epoch:46 Iter:100 Cost:4.4987
+Epoch:46 Iter:200 Cost:4.5977
+Epoch:46 Iter:300 Cost:4.3689
+Epoch:46 Iter:400 Cost:4.5766
+Epoch:46 Iter:500 Cost:4.7869
+Epoch:46 Iter:600 Cost:4.3702
+Epoch:46 Iter:700 Cost:4.3202
+Epoch:46 Iter:800 Cost:4.3182
+Epoch:46 Iter:900 Cost:4.5405
+Epoch:46 Iter:1000 Cost:4.5285
+Epoch:46 Iter:1100 Cost:4.5405
+Epoch:46 Iter:1200 Cost:4.5606
+Epoch:46 Iter:1300 Cost:4.5235
+Epoch:46 Iter:1400 Cost:4.5739
+Epoch:46 Iter:1500 Cost:4.4779
+Epoch:46 Iter:1600 Cost:4.6248
+Epoch:47 AUC:0.6179
+model saved at clo/model-75294
+Epoch:47 Iter:100 Cost:4.4231
+Epoch:47 Iter:200 Cost:4.2207
+Epoch:47 Iter:300 Cost:4.2522
+Epoch:47 Iter:400 Cost:4.4349
+Epoch:47 Iter:500 Cost:4.7006
+Epoch:47 Iter:600 Cost:4.4445
+Epoch:47 Iter:700 Cost:4.7326
+Epoch:47 Iter:800 Cost:4.3175
+Epoch:47 Iter:900 Cost:4.4737
+Epoch:47 Iter:1000 Cost:4.6768
+Epoch:47 Iter:1100 Cost:4.5095
+Epoch:47 Iter:1200 Cost:4.6023
+Epoch:47 Iter:1300 Cost:4.4683
+Epoch:47 Iter:1400 Cost:4.7410
+Epoch:47 Iter:1500 Cost:4.4213
+Epoch:47 Iter:1600 Cost:4.4112
+Epoch:48 AUC:0.6196
+model saved at clo/model-76896
+Epoch:48 Iter:100 Cost:4.2891
+Epoch:48 Iter:200 Cost:4.4016
+Epoch:48 Iter:300 Cost:4.2285
+Epoch:48 Iter:400 Cost:4.4291
+Epoch:48 Iter:500 Cost:4.9228
+Epoch:48 Iter:600 Cost:4.1474
+Epoch:48 Iter:700 Cost:4.3030
+Epoch:48 Iter:800 Cost:4.3639
+Epoch:48 Iter:900 Cost:4.3936
+Epoch:48 Iter:1000 Cost:4.6296
+Epoch:48 Iter:1100 Cost:4.4985
+Epoch:48 Iter:1200 Cost:4.4354
+Epoch:48 Iter:1300 Cost:4.4984
+Epoch:48 Iter:1400 Cost:4.4135
+Epoch:48 Iter:1500 Cost:4.5645
+Epoch:48 Iter:1600 Cost:4.6095
+Epoch:49 AUC:0.6202
+model saved at clo/model-78498
+Epoch:49 Iter:100 Cost:4.2206
+Epoch:49 Iter:200 Cost:4.5717
+Epoch:49 Iter:300 Cost:4.3899
+Epoch:49 Iter:400 Cost:4.8722
+Epoch:49 Iter:500 Cost:4.5191
+Epoch:49 Iter:600 Cost:4.4252
+Epoch:49 Iter:700 Cost:4.3972
+Epoch:49 Iter:800 Cost:4.4007
+Epoch:49 Iter:900 Cost:4.7720
+Epoch:49 Iter:1000 Cost:4.5982
+Epoch:49 Iter:1100 Cost:4.4605
+Epoch:49 Iter:1200 Cost:4.4149
+Epoch:49 Iter:1300 Cost:4.4790
+Epoch:49 Iter:1400 Cost:4.4484
+Epoch:49 Iter:1500 Cost:4.4454
+Epoch:49 Iter:1600 Cost:4.4604
+0.699851971471

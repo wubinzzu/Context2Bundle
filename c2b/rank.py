@@ -9,7 +9,7 @@ import numpy as np
 import tensorflow as tf
 tf.set_random_seed(1234)
 
-from seq import Model
+from model import Model
 
 flag = 'clo'
 
